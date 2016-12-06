@@ -1,5 +1,9 @@
 class Run
-  def self.test(input)
-    return 0
+  attr_accessor :duration, :distance, :timestamp
+
+  def initialize(input)
+    @duration = input[:duration]
+    @distance = input[:distance]
+    @timestamp = input[:timestamp]
   end
 end
